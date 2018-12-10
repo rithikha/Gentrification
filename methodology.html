@@ -50,7 +50,7 @@
 <h2> Data</h2>
 <h3> Spatial and Temporal Units </h3>
 <p style="line-height: 1.5em;"> Census Tracts were used as the spatial units as they remained relatively stable
-	(compared to Dissemination Areas) from 2006 to 2016, the timeframe of this study, which
+	(compared to Dissemination Areas) from 2006 to 2016 for the timeframe of this study, which
 	includes two 5 year periods, 2006-2011 and 2011-2016, and one 10 year period, 2006 - 2016.
 	These different time frames were used in order to see how changes differed over a small and
 	large temporal scale and to better identify patterns in negative change from one period to the next.
@@ -99,7 +99,7 @@
 					</tr>
 					<tr>
 						<td>Income Data</td>
-						<td>Total persons in private households - 20% sample data / <b>Prevalence of low income households after
+						<td>Total persons in private households - 20% sample data / <b>Prevalence of low income households after (%)
 							tax</b>
 						</td>
 					</tr>
@@ -156,35 +156,35 @@ Aboriginal population - Females / Total population in private households by Abor
 
 
 								<p style="line-height: 1.5em;">
-									<b> PART ONE</b> Creating Base layers
+									<h3> PART ONE</h3> Creating Base layers
 								</p>
 								<div class="image main"><img src="images/methods1.png" alt="" /></div>
 
 
 								<p style="line-height: 1.5em;">
-									<b> PART TWO</b> Calculating the change occurring in T1 (2006-2011), T2 (2011-2016),
+									<h3> PART two</h3>Calculating the change occurring in T1 (2006-2011), T2 (2011-2016),
 									 and Tt (2006-2016). Spatial Joins were used as CT Boundaries varied slightly from
 									 year to year. CT areas that were missing data from either year were removed from both map sets.</p>
 								<div class="image main"><img src="images/methods2.png" alt="" /></div>
 
 								<p style="line-height: 1.5em;">
-									<b> ATTRIBUTE TABLE CALCULATIONS</b> TThe Attribute table was directly manipulated to calculate the changes for the factors
+									<b> ATTRIBUTE TABLE CALCULATIONS</b> The Attribute table was directly manipulated to calculate the changes for the factors
 									 over each time period. A sample of these calculations is shown below for T1. Inflation factors of 1.19 (2006 to 2016) and 1.11
 									 (2006 to 2011) were multiplied to 2006 income data, and all factors were normalized by CT total population (population from
 									 15-65 for the Education layer) before the difference was calculated.</p>
 								<div class="image main"><img src="images/methods2_2.png" alt="" /></div>
 
 								<p style="line-height: 1.5em;">
-									<b> PART THREE</b> Multi Criteria Evaluation. The vector data was converted into raster layers and then
+									<h3> PART three</h3>Multi Criteria Evaluation. The vector data was converted into raster layers and then
 									normalized using a Linear Fuzzy membership where the minimum value was set to 0 and the maximum was set
 									to the largest negative change that occurred in each factor. (Hedge = SOMEWHAT to increase membership as
 									only the highest amounts of negative change, a small portion of the overall data, were going to be considered
 									 in the final maps). The 4 factor changes were combined using a weighted sum into one map showing overall
 									 negative change for each time period. The weights are as follows: Unaffordability = 0.5, Education, Income,
-									  Minority:Majority Ratio =  0.1667.<div class="image main"><img src="images/methods3.png" alt="" /></div>
+									  Minorities =  0.1667.<div class="image main"><img src="images/methods3.png" alt="" /></div>
 
 								<p style="line-height: 1.5em;">
-									<b> PART FOUR</b>A sensitivity analysis was conducted to see how the results changed if we were to use
+									<h3> PART four</h3> A sensitivity analysis was conducted to see how the results changed if we were to use
 									different weights for the MCE. The two MCE's (the original MCE favouring affordability and the equally weighted
 									MCE) were then reclassified into 5 groups (given labels of  0,0,0,1, and 2 from lowest value group to highest
 									value group). They were combined using a weighted sum (equally weighted) to produce the final maps for each
